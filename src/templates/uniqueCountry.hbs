@@ -1,0 +1,14 @@
+{{#each this}}
+<div class="search__unique-result-text-block">
+    <h1>{{name}}</h1>
+    <p>Capital: {{capital}}</p>
+    <p>Population: {{population}} people</p>
+    <p>Languages: </p>
+    <ul>
+        {{#each this.languages}}
+        <li>{{name}}</li>
+        {{/each}}
+    </ul>
+</div>
+<div class="search__unique-result-image-block"><img src="{{flag}}" alt="{{altSpellings}}"></div>
+{{/each}}
